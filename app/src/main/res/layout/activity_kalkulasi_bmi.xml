@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".KalkulasiBmiActivity">
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="match_parent"
+        android:layout_height="108dp"
+        android:background="@drawable/shape"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="8dp"
+        android:src="@drawable/baseline_arrow_back_24"
+        app:layout_constraintBottom_toTopOf="@+id/guideline2"
+        app:layout_constraintStart_toStartOf="@+id/imageView2"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="107dp"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:fontFamily="@font/arvo_bold"
+        android:text="Kalkulator Bmi"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/guideline2"
+        app:layout_constraintStart_toEndOf="@+id/imageView4"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/rectangle"
+        android:fontFamily="@font/arvo_bold"
+        android:gravity="center"
+        android:paddingLeft="15dp"
+        android:paddingTop="20dp"
+        android:paddingRight="15dp"
+        android:paddingBottom="20dp"
+        android:text="@string/intro"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/guideline2" />
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:gravity="center"
+        app:layout_constraintEnd_toEndOf="@+id/textView2"
+        app:layout_constraintStart_toStartOf="@+id/textView2"
+        app:layout_constraintTop_toBottomOf="@id/textView2">
+
+        <LinearLayout
+            android:id="@+id/btn_genderLk"
+            android:layout_width="103dp"
+            android:layout_height="68dp"
+            android:layout_margin="10dp"
+            android:background="@drawable/gender"
+            android:elevation="5dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:fontFamily="@font/inter_bold"
+                android:text="Laki-laki" />
+
+            <ImageView
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/lk" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/btn_genderPr"
+            android:layout_width="103dp"
+            android:layout_height="68dp"
+            android:layout_margin="10dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:background="@drawable/gender"
+            android:elevation="5dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:fontFamily="@font/inter_bold"
+                android:text="Perempuan" />
+
+            <ImageView
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/pr" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/result"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="1dp"
+        app:layout_constraintEnd_toEndOf="@+id/linearLayout"
+        app:layout_constraintStart_toStartOf="@+id/linearLayout"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+
+
+    <EditText
+        android:id="@+id/ed_umur"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="91dp"
+        android:hint="umur"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="@+id/linearLayout"
+        app:layout_constraintStart_toStartOf="@+id/linearLayout"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+
+    <EditText
+        android:id="@+id/ed_tinggi"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:hint="Tinggi(cm)"
+        android:inputType="number"
+        android:layout_marginTop="27dp"
+        app:layout_constraintEnd_toEndOf="@+id/ed_umur"
+        app:layout_constraintStart_toStartOf="@+id/ed_umur"
+        app:layout_constraintTop_toBottomOf="@+id/ed_umur" />
+
+    <EditText
+        android:id="@+id/ed_berat"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:hint="Berat(kg)"
+        android:inputType="number"
+        android:layout_marginTop="27dp"
+        app:layout_constraintEnd_toEndOf="@+id/ed_tinggi"
+        app:layout_constraintStart_toStartOf="@+id/ed_tinggi"
+        app:layout_constraintTop_toBottomOf="@+id/ed_tinggi" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/hitung_Bmi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hitung Bmi"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:paddingStart="80dp"
+        android:paddingEnd="80dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/shape_btn"
+        android:textColor="@color/white"
+        android:fontFamily="@font/inter"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="@+id/ed_berat"
+        app:layout_constraintStart_toStartOf="@+id/ed_berat"
+        app:layout_constraintTop_toBottomOf="@+id/ed_berat" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Stay Health</string>
+    <string name="intro">Body Mass Index (BMI) adalah cara menghitung berat badan ideal berdasarkan tinggi dan berat badan</string>
+
+    <string name="titleInfo1">Olahraga ini sangat ampuh untuk menurunkan berat</string>
+    <string name="titleInfo2">5 makanan yang dapat menurunkan berat badan</string>
+    <string name="titleInfo3">5 makanan yang dapat menurunkan berat badan</string>
+    <string name="titleInfo4">Olahraga ini sangat ampuh untuk menurunkan berat</string>
+
+    <string name="desc">
+        Siapa sangka, olahraga aerobik ringan ini juga efektif untuk menurunkan berat badan jika kamu lakukan secara rutin. Bahkan, kamu bisa berjalan kaki di mana saja, kapan saja. Bisa di pasar sambil berbelanja, di mal sambil melihat-lihat, atau perjalanan ke kantor dari halte atau stasiun.\n\nHanya berjalan kaki selama 30 menit setiap hari, tubuh telah membakar kalori sebanyak 167 kkal. Jika kamu sudah membiasakan untuk melakukan aktivitas ini, kamu bisa menambahkan durasi jalan kaki menjadi lebih lama.
+        \n\nMenurut hasil penelitian di MDPI Journals, berjalan dapat menurunkan lemak total dan lemak perut pada perempuan pascamenopause. Latihan aerobik sederhana seperti berjalan merupakan pilihan olahraga sederhana untuk menjaga kesehatan tulang, dan berat badan stabil pascamenopause.
+    </string>
+</resources>

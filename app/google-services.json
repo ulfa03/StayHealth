@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "63974863994",
+    "project_id": "stay-health-6a12b",
+    "storage_bucket": "stay-health-6a12b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:63974863994:android:198ea5073294320356b7c3",
+        "android_client_info": {
+          "package_name": "com.example.stayhealth"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBxT1Jg3l2UuM5A8elZAsm3irVIL9zrYUs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
